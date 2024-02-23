@@ -1,0 +1,12 @@
+name: jaspr_material
+description: The material library for Jaspr
+version: 0.1.0+1
+
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dev_dependencies:
+  mocktail: ^1.0.0
+  test: ^1.19.2
+  very_good_analysis: ^5.1.0
