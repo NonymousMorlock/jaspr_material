@@ -18,33 +18,40 @@ dart pub add jaspr_material
 
 ---
 
-## Continuous Integration 🤖
+## Icon
 
-Jaspr Material comes with a built-in [GitHub Actions workflow][github_actions_link] powered by [Very Good Workflows][very_good_workflows_link] but you can also add your preferred CI/CD solution.
+The `Icon` class is a jaspr `Component` that creates a material icon.
 
-Out of the box, on each pull request and push, the CI `formats`, `lints`, and `tests` the code. This ensures the code remains consistent and behaves correctly as you add functionality or make changes. The project uses [Very Good Analysis][very_good_analysis_link] for a strict set of analysis options used by our team. Code coverage is enforced using the [Very Good Workflows][very_good_coverage_link].
+### Properties
 
----
+- size - The size of the icon
+- colour - The colour of this icon
+- iconData - The icon you are trying to display
 
-## Running Tests 🧪
+The `iconData` property can be either the `name` of the icon or a member  of the `Icons` class. Visit [Google Fonts](https://material.io/resources/icons) and select any icon of your choice, this should show you it's `name`, it's now up to you to either type in it's name as the `iconData` or use `Icons.iconName` to find your icon.
 
-To run all unit tests:
+See `Icons` section for more info.
 
-```sh
-dart pub global activate coverage 1.2.0
-dart test --coverage=coverage
-dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info
-```
+### Variations
 
-To view the generated coverage report you can use [lcov](https://github.com/linux-test-project/lcov).
+The `Icon()` constructor gives you a `filled` material icon which is the default material icon style. This library exposes other styles of material-icons which include:
 
-```sh
-# Generate Coverage Report
-genhtml coverage/lcov.info -o coverage/
+- Icon.rounded
+- Icon.sharp
+- Icon.outlined
+- Icon.twoToned
 
-# Open Coverage Report
-open coverage/index.html
-```
+## Icons
+
+Identifiers for the supported [Material Icons](https://material.io/resources/icons).
+
+You can use them as `Icons.adb`. Simply find the icon you want to use from either [Material Icons](https://material.io/resources/icons) or [Google Fonts](https://material.io/resources/icons) and try to access it using `Icons.iconName`.
+
+NB: If the icon name starts with a **NUMBER**, use the dollar sign($) before typing the icon name. 
+
+Example: If the icon name is `10k`, you can access it using `Icons.$10k`. This is because dart doesn't allow numbers to start variable names.
+
+Some other icons might end with the dollar sign($) because their full name is a reserved keyword in dart, like the `try` icon will be `try$`.
 
 [dart_install_link]: https://dart.dev/get-dart
 [github_actions_link]: https://docs.github.com/en/actions/learn-github-actions
