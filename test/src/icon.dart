@@ -3,9 +3,9 @@ import 'package:jaspr_material/jaspr_material.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('JasprMaterial', () {
+  group('Icon', () {
     test('can be instantiated', () {
-      expect(JasprMaterial(), isNotNull);
+      expect(Icon('test'), isNotNull);
     });
   });
 }
