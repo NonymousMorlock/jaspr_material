@@ -2,7 +2,7 @@ name: jaspr_material
 description: This is the material library for the Jaspr web framework based on dart. The current 
   Jaspr library of components contain mostly html tags served as components, however, given that 
   this is supposed to cater more to a flutter audience, some material components are being added.
-version: 0.1.0+2
+version: 0.1.1+1
 repository: https://github.com/NonymousMorlock/jaspr_material
 
 environment:
