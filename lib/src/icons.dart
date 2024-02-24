@@ -431,7 +431,7 @@ abstract class Icons {
   static const church = '&#xEAAE';
   static const circle = '&#xEF4A';
   static const circleNotifications = '&#xE994';
-  static const class1 = '&#xE86E';
+  static const class$ = '&#xE86E';
   static const cleanHands = '&#xF21F';
   static const cleaningServices = '&#xF0FF';
   static const clear = '&#xE14C';
@@ -1307,7 +1307,7 @@ abstract class Icons {
   static const movieEdit = '&#xF840';
   static const movieFilter = '&#xE43A';
   static const moving = '&#xE501';
-  static const mp$ = '&#xE9C3';
+  static const mp = '&#xE9C3';
   static const multilineChart = '&#xE6DF';
   static const multipleStop = '&#xF1B9';
   static const multitrackAudio = '&#xE1B8';
