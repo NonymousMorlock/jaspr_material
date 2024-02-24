@@ -1,7 +1,7 @@
 name: jaspr_material
 description: The material library for Jaspr
 version: 0.1.0+1
-
+repository: https://github.com/NonymousMorlock/jaspr_material
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
