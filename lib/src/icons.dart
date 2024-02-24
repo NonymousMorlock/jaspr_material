@@ -1,7 +1,9 @@
+import 'package:jaspr_material/jaspr_material.dart';
+
 /// Identifiers for the supported [Material Icons](https://material.io/resources/icons).
 ///
 /// Use with the [Icon] class to show specific icons. Icons are identified by
-/// their name as listed below, e.g. [Icons.airplanemode_on].
+/// their name as listed below, e.g. [Icons.airplanemodeOn].
 ///
 /// Search and find the perfect icon on the [Google Fonts](https://material.io/resources/icons) website.
 ///
