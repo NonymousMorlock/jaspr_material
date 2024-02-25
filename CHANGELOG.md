@@ -5,3 +5,7 @@
 # 0.1.1+1
 
 - documentation: enhanced package description and included repository url
+
+# 0.1.2
+
+- documentation: trying to up the pub.dev score
