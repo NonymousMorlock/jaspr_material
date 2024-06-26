@@ -10,6 +10,6 @@ environment:
 dev_dependencies:
   mocktail: ^1.0.0
   test: ^1.19.2
-  very_good_analysis: ^5.1.0
+  very_good_analysis: ">=5.1.0 <7.0.0"
 dependencies:
   jaspr: ">=0.10.0 <0.14.0"
