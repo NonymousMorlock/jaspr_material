@@ -107,7 +107,7 @@ class Icon extends Component {
 
   @override
   Element createElement() {
-    var iconStyle = styles != null ? '' : ' style="display: inline-flex;';
+    var iconStyle = styles != null ? '' : 'display: inline-flex;';
     if (colour == null && size == null && lineHeight == null) {
       iconStyle += '"';
     }
@@ -131,15 +131,17 @@ class Icon extends Component {
           tag: 'span',
           classes: iconType,
           styles: styles,
-          child: text(iconData, rawHtml: true),
+          child: raw(iconData),
         ),
       );
     }
-    return TextElement(
-      Text(
-        '<span class="$iconType"'
-        '$iconStyle>$iconData</span>',
-        rawHtml: true,
+
+    return DomElement(
+      DomComponent(
+        tag: 'span',
+        classes: iconType,
+        attributes: {'style': iconStyle},
+        child: raw(iconData),
       ),
     );
   }
