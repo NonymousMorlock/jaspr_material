@@ -13,3 +13,11 @@
 # 0.1.3
 
 - documentation: trying to up the pub.dev score
+
+# 0.1.4
+
+- fix: upgraded jaspr from 0.10.0 to 0.15.1
+
+# 0.1.5
+
+- documentation: update the documentation for this package with more information.
