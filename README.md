@@ -15,6 +15,37 @@ Install via `dart pub add`:
 ```sh
 dart pub add jaspr_material
 ```
+---
+
+## Usage 🚀
+
+Add the following code to the `head` of your `Document` to include the material icons stylesheet.
+
+```dart
+link(
+  href: 'https://fonts.googleapis'
+      '.com/css?family=Material+Icons|Material+Icons+Outlined'
+      '|Material+Icons+Two+Tone|Material+Icons+Round|Material+'
+      'Icons+Sharp',
+  rel: 'stylesheet',
+)
+```
+After adding the stylesheet, you can now start using the `Icon` class to display material icons.
+
+```dart
+import 'package:jaspr_material/jaspr_material.dart';
+
+Icon(
+    Icons.language,
+    styles: Styles.combine([Styles.flexbox(alignItems: AlignItems.baseline)]),
+),
+
+Icon.outlined(
+    Icons.language,
+    size: Unit.pixels(20),
+    colour: Colors.red,
+),
+```
 
 ---
 

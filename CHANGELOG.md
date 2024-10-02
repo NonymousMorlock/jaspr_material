@@ -21,3 +21,7 @@
 # 0.1.5
 
 - documentation: update the documentation for this package with more information.
+
+# 0.1.6
+
+- documentation: update the documentation for this package with more information.
