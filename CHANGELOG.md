@@ -25,3 +25,8 @@
 # 0.1.6
 
 - documentation: update the documentation for this package with more information.
+
+# 0.1.7
+
+- feat: added example directory to the package
+
