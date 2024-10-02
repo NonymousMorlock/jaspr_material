@@ -15,6 +15,37 @@ Install via `dart pub add`:
 ```sh
 dart pub add jaspr_material
 ```
+---
+
+## Usage 🚀
+
+Add the following code to the `head` of your `Document` to include the material icons stylesheet.
+
+```dart
+link(
+  href: 'https://fonts.googleapis'
+      '.com/css?family=Material+Icons|Material+Icons+Outlined'
+      '|Material+Icons+Two+Tone|Material+Icons+Round|Material+'
+      'Icons+Sharp',
+  rel: 'stylesheet',
+)
+```
+After adding the stylesheet, you can now start using the `Icon` class to display material icons.
+
+```dart
+import 'package:jaspr_material/jaspr_material.dart';
+
+Icon(
+    Icons.language,
+    styles: Styles.combine([Styles.flexbox(alignItems: AlignItems.baseline)]),
+),
+
+Icon.outlined(
+    Icons.language,
+    size: Unit.pixels(20),
+    colour: Colors.red,
+),
+```
 
 ---
 
@@ -27,10 +58,14 @@ The `Icon` class is a jaspr `Component` that creates a material icon.
 - size - The size of the icon
 - colour - The colour of this icon
 - iconData - The icon you are trying to display
+- iconType - The type of icon you are trying to display. You can use the named constructors 
+  instead as well. Check [Variations](#variations) for more info.
+- lineHeight - The line height of the icon
+- styles - The styles of the icon
 
 The `iconData` property can be either the `name` of the icon or a member  of the `Icons` class. Visit [Google Fonts](https://material.io/resources/icons) and select any icon of your choice, this should show you it's `name`, it's now up to you to either type in it's name as the `iconData` or use `Icons.iconName` to find your icon.
 
-See `Icons` section for more info.
+See [Icons](#icons) section for more info.
 
 ### Variations
 
@@ -40,6 +75,9 @@ The `Icon()` constructor gives you a `filled` material icon which is the default
 - Icon.sharp
 - Icon.outlined
 - Icon.twoToned
+
+You can either use these constructors or still use the default `Icon()` constructor and set the
+`iconType` property to any type you want in the form of a `String`.
 
 ## Icons
 
@@ -52,6 +90,15 @@ NB: If the icon name starts with a **NUMBER**, use the dollar sign($) before typ
 Example: If the icon name is `10k`, you can access it using `Icons.$10k`. This is because dart doesn't allow numbers to start variable names.
 
 Some other icons might end with the dollar sign($) because their full name is a reserved keyword in dart, like the `try` icon will be `try$`.
+
+
+## Styles
+
+The `styles` property of the `Icon` class is a jaspr `Styles` class that allows you to pass custom
+css styles to the icon. 
+
+NB: When the Styles property is set, it overrides the other styling properties of the icon.
+These properties include `size`, `colour`, and `lineHeight.
 
 [dart_install_link]: https://dart.dev/get-dart
 [github_actions_link]: https://docs.github.com/en/actions/learn-github-actions
