@@ -30,3 +30,7 @@
 
 - feat: added example directory to the package
 
+# 0.1.8
+
+- chore: Upgraded jaspr from 0.15.1 to 0.16.0
+
