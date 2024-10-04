@@ -152,7 +152,7 @@
         <entry key="jaspr">
           <value>
             <list>
-              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/jaspr-0.15.1/lib" />
+              <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/jaspr-0.16.0/lib" />
             </list>
           </value>
         </entry>
@@ -445,7 +445,7 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/http_parser-4.1.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/io-1.0.4/lib" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/jaspr-0.15.1/lib" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/jaspr-0.16.0/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/js-0.6.7/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/logging-1.1.1/lib" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/macros-0.1.2-main.4/lib" />
