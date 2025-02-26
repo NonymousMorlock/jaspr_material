@@ -1,6 +1,6 @@
 name: jaspr_material
 description: This is the material library for the Jaspr web framework based on dart. This package adds some material components to the existing Jaspr ecosystem.
-version: 0.1.9
+version: 0.1.10
 repository: https://github.com/NonymousMorlock/jaspr_material
 homepage: https://github.com/NonymousMorlock/jaspr_material
 
@@ -12,4 +12,4 @@ dev_dependencies:
   test: ^1.25.8
   very_good_analysis: ">=6.0.0 <8.0.0"
 dependencies:
-  jaspr: ">=0.16.0 <0.18.0"
+  jaspr: ^0.18.0
