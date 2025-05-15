@@ -42,3 +42,7 @@
 
 - chore: Upgraded jaspr from ">=0.16.0 <0.18.0" to "^0.18.0"
 
+# 0.1.11
+
+- chore: Upgraded jaspr from "^0.18.0" to ">=0.19.0 <0.20.0"
+
