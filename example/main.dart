@@ -18,10 +18,10 @@ void main() {
         ),
       ],
       styles: <StyleRule>[],
-      body: DomComponent(
+      body: Component.element(
         tag: 'body',
-        styles: const Styles.background(color: Color.named('#101118')),
-        child: App(),
+        styles: const Styles(backgroundColor: Color('#101118')),
+        children: [App()],
       ),
     ),
   );
@@ -30,19 +30,17 @@ void main() {
 @client
 class App extends StatelessComponent {
   @override
-  Iterable<Component> build(BuildContext context) sync* {
-    yield const Column(
+  Component build(BuildContext context) {
+    return const Column(
       children: [
         Icon(
           Icons.language,
-          styles: Styles.combine(
-            [
-              Styles.flexbox(alignItems: AlignItems.baseline),
-              Styles.text(color: Color.named('#fff')),
-            ],
+          styles: Styles(
+            color: Color('#fff'),
+            alignItems: AlignItems.baseline,
           ),
         ),
-        Icon.outlined(Icons.phone, size: Unit.pixels(20), colour: Colors.red),
+        Icon.outlined(Icons.phone, size: Unit.pixels(20), color: Colors.red),
       ],
     );
   }
