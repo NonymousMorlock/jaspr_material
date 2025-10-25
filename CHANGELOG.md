@@ -49,3 +49,22 @@
 # 0.1.12
 
 - chore: Upgraded jaspr from ">=0.19.0 <0.20.0" to ">=0.20.0 <0.21.0"
+
+# 0.2.0
+
+### 💥 Breaking
+- **Renamed** the `colour` property to `color` for consistency with Dart and Flutter conventions.
+
+### ✨ Features / Improvements
+- Refactored `Icon` to extend `StatelessComponent` and reimplemented the rendering logic using `build()` for improved clarity and future compatibility.
+- Simplified and modernised style composition using `Styles.combine` with built-in `color`, `fontSize`, and `lineHeight` support.
+- Enhanced API consistency and improved internal code readability.
+- Updated the example to reflect new API usage and Jaspr 0.21+ conventions.
+
+### 🧱 Maintenance
+- Upgraded SDK constraint to `>=3.8.0 <4.0.0`.
+- Upgraded dependencies:
+    - `jaspr` → `>=0.21.6 <0.22.0`
+    - `very_good_analysis` → `>=6.0.0 <11.0.0`
+- Minor documentation and README improvements for clarity and correctness.
+
