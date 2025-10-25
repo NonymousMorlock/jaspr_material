@@ -43,7 +43,7 @@ Icon(
 Icon.outlined(
     Icons.language,
     size: Unit.pixels(20),
-    colour: Colors.red,
+    color: Colors.red,
 ),
 ```
 
@@ -56,7 +56,7 @@ The `Icon` class is a jaspr `Component` that creates a material icon.
 ### Properties
 
 - size - The size of the icon
-- colour - The colour of this icon
+- color - The colour of this icon
 - iconData - The icon you are trying to display
 - iconType - The type of icon you are trying to display. You can use the named constructors 
   instead as well. Check [Variations](#variations) for more info.
@@ -97,8 +97,9 @@ Some other icons might end with the dollar sign($) because their full name is a 
 The `styles` property of the `Icon` class is a jaspr `Styles` class that allows you to pass custom
 css styles to the icon. 
 
-NB: When the Styles property is set, it overrides the other styling properties of the icon.
-These properties include `size`, `colour`, and `lineHeight.
+**Important**: When using the `styles` property, you cannot simultaneously provide individual styling properties (`size`, `color`, or `lineHeight`). This is enforced by the API to prevent conflicts. You must either:
+- Use individual properties (`size`, `color`, `lineHeight`), or
+- Provide all styling through the `styles` property
 
 [dart_install_link]: https://dart.dev/get-dart
 [github_actions_link]: https://docs.github.com/en/actions/learn-github-actions
