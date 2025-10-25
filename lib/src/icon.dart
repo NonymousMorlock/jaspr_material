@@ -1,7 +1,8 @@
 import 'package:jaspr/jaspr.dart';
+import 'package:jaspr/ui.dart';
 
 /// A material icon component
-class Icon extends Component {
+class Icon extends StatelessComponent {
   /// Constructs an [Icon] using the default material-icons.
   /// <br />
   /// The default material-icons is `filled`
@@ -106,35 +107,13 @@ class Icon extends Component {
   final Styles? styles;
 
   @override
-  Element createElement() {
-    var iconStyle = styles != null ? '' : 'display: inline-flex;';
-    if (colour == null && size == null && lineHeight == null) {
-      iconStyle += '"';
-    }
-    if (size case Unit(:final String value)) {
-      iconStyle += ' font-size: $value;';
-      if (lineHeight == null) {
-        iconStyle += ' line-height: $value;';
-      }
-      iconStyle += colour == null ? '"' : '';
-    }
-    if (lineHeight case Unit(:final String value)) {
-      iconStyle += ' line-height: $value;'
-          '${colour == null ? '"' : ''}';
-    }
-    if (colour case Color(:final String value)) {
-      iconStyle += ' color: $value;"';
-    }
-    if (styles != null) {
-      return DomElement(
-        DomComponent(
-          tag: 'span',
-          classes: iconType,
-          styles: styles,
-          child: raw(iconData),
-        ),
-      );
-    }
+  Component build(_) {
+    final defaultStyle = Styles(
+      display: Display.inlineFlex,
+      fontSize: size,
+      lineHeight: lineHeight ?? size,
+      color: color,
+    );
 
     return DomElement(
       DomComponent(
