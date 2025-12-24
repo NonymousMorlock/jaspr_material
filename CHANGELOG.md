@@ -1,3 +1,10 @@
+# 0.2.2
+
+- chore: Upgraded `jaspr` dependency to `">=0.22.0 <0.23.0"`.
+- chore: Added `jaspr_lints` and `lints` to `dev_dependencies`.
+- refactor: Updated `Icon` component to use `RawText` and migrated imports from `jaspr/ui.dart` to `jaspr/dom.dart`.
+- example: Updated example to use modern Jaspr patterns and layout.
+
 # 0.2.1
 
 - chore: Upgraded jaspr from ">=0.21.6 <0.22.0" to ">=0.21.6 <0.23.0"
