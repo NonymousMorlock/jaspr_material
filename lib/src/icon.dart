@@ -1,5 +1,5 @@
+import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
-import 'package:jaspr/ui.dart';
 
 /// A material icon component
 class Icon extends StatelessComponent {
@@ -119,7 +119,7 @@ class Icon extends StatelessComponent {
       tag: 'span',
       classes: iconType,
       styles: Styles.combine([defaultStyle, ?styles]),
-      children: [raw(iconData)],
+      children: [RawText(iconData)],
     );
   }
 }

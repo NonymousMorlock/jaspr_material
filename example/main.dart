@@ -1,5 +1,5 @@
+import 'package:jaspr/dom.dart';
 import 'package:jaspr/server.dart';
-import 'package:jaspr/ui.dart' hide Document;
 import 'package:jaspr_material/jaspr_material.dart';
 
 void main() {
@@ -8,7 +8,7 @@ void main() {
   runApp(
     Document(
       title: 'Title',
-      head: [
+      head: const [
         link(
           href: 'https://fonts.googleapis'
               '.com/css?family=Material+Icons|Material+Icons+Outlined'
@@ -31,8 +31,8 @@ void main() {
 class App extends StatelessComponent {
   @override
   Component build(BuildContext context) {
-    return const Column(
-      children: [
+    return const div(
+      [
         Icon(
           Icons.language,
           styles: Styles(
@@ -42,6 +42,7 @@ class App extends StatelessComponent {
         ),
         Icon.outlined(Icons.phone, size: Unit.pixels(20), color: Colors.red),
       ],
+      classes: 'flex flex-col items-center justify-center h-screen'
     );
   }
 }
