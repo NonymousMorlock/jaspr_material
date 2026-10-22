@@ -1,3 +1,7 @@
+# 0.2.3
+
+- chore: Upgraded `jaspr` dependency to `">=0.23.0 <0.24.0"`.
+
 # 0.2.2
 
 - chore: Upgraded `jaspr` dependency to `">=0.22.0 <0.23.0"`.
